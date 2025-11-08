@@ -73,12 +73,14 @@
       gst = "git status";
       gaa = "git add .";
       gau = "git add -u";
+      gap = "git add -p";
       gcm = "git commit -m";
       gca = "git commit -a -m";
       gl = "git log --oneline --graph --all";
     };
   };
 
+  # TODO configure prompt
   programs.starship = {
     enable = true;
 
