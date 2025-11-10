@@ -221,6 +221,10 @@
     };
   };
 
+  programs.obsidian = {
+    enable = true;
+  };
+
   programs.obs-studio = {
     enable = true;
   };
