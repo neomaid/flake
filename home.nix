@@ -29,6 +29,7 @@
     stow
     cloc
     nurl
+    nix-init
 
     # desktop apps
     polychromatic
