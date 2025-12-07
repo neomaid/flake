@@ -37,6 +37,10 @@
     cider-2
     qbittorrent
     filezilla
+
+    # games
+    gamemode
+    mangohud
     xivlauncher
     prismlauncher
   ];
