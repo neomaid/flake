@@ -37,7 +37,6 @@
     cider-2
     qbittorrent
     filezilla
-    cloudflare-warp
     gimp
 
     # games
