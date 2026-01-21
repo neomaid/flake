@@ -32,6 +32,7 @@
     nix-init
 
     # desktop apps
+    ungoogled-chromium
     polychromatic
     discord
     cider-2
