@@ -117,7 +117,7 @@
     settings = {
       user = {
         name = "tearmaid";
-        email = "me@maid.systems";
+        email = "me@maid.dev";
       };
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
