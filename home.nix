@@ -46,6 +46,8 @@
     mangohud
     xivlauncher
     prismlauncher
+    heroic
+    protonplus
   ];
 
   home.sessionVariables = {
