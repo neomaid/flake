@@ -30,6 +30,7 @@
     cloc
     nurl
     nix-init
+    nvtopPackages.nvidia
 
     # desktop apps
     ungoogled-chromium
