@@ -41,6 +41,7 @@
     qbittorrent
     filezilla
     gimp
+    pavucontrol
 
     # games
     gamemode
