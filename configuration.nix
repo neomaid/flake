@@ -46,11 +46,13 @@
       # };
     };
   };
-  # Load kernel modules for sensors/controls on ASUS ROG Strix B550-I motherboard
   boot.kernelModules = [
+    # Kernel modules for sensors/controls on ASUS ROG Strix B550-I motherboard
     "jc24"
     "nct6775"
+
     "uinput"
+    "ntsync"
   ];
 
   # Enable OpenGL
