@@ -1,7 +1,9 @@
-{ pkgs, lib, ... }:
-
+{
+  pkgs,
+  lib,
+  ...
+}:
 # TODO add systemd service for tartarus-pro-joystick-util
-
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -16,6 +18,7 @@
     jdk25
     python3
     nixfmt
+    alejandra
     sqlite
 
     # commandline utilities
@@ -80,7 +83,7 @@
       size = 10000;
       ignoreAllDups = true;
       path = "$HOME/.zsh_history";
-      ignorePatterns = [ "rm *" ];
+      ignorePatterns = ["rm *"];
     };
 
     shellAliases = {
@@ -235,6 +238,7 @@
         aaron-bond.better-comments
         ms-python.python
         jnoortheen.nix-ide
+        kamadorueda.alejandra
         tamasfe.even-better-toml
         codezombiech.gitignore
         mvllow.rose-pine

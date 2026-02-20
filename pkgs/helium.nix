@@ -5,9 +5,7 @@
   appimageTools,
   makeDesktopItem,
   copyDesktopItems,
-}:
-
-let
+}: let
   pname = "helium";
   version = "0.9.1.1";
 
@@ -32,25 +30,25 @@ let
     inherit pname version src;
   };
 in
-appimageTools.wrapType2 {
-  inherit pname version src;
+  appimageTools.wrapType2 {
+    inherit pname version src;
 
-  extraPkgs = pkgs: with pkgs; [ ];
+    extraPkgs = pkgs: with pkgs; [];
 
-  extraInstallCommands = ''
-    install -Dm644 ${desktopItem}/share/applications/${pname}.desktop $out/share/applications/${pname}.desktop
+    extraInstallCommands = ''
+      install -Dm644 ${desktopItem}/share/applications/${pname}.desktop $out/share/applications/${pname}.desktop
 
-    # Find and install the largest icon available from the extracted AppImage
-    icon_path=$(find ${extracted}/usr/share/icons -type f -name "*.png" 2>/dev/null | sort | tail -n1 || true)
-    if [ -n "$icon_path" ]; then
-      install -Dm644 "$icon_path" $out/share/icons/hicolor/256x256/apps/${pname}.png
-    fi
-  '';
+      # Find and install the largest icon available from the extracted AppImage
+      icon_path=$(find ${extracted}/usr/share/icons -type f -name "*.png" 2>/dev/null | sort | tail -n1 || true)
+      if [ -n "$icon_path" ]; then
+        install -Dm644 "$icon_path" $out/share/icons/hicolor/256x256/apps/${pname}.png
+      fi
+    '';
 
-  meta = with lib; {
-    description = "Helium web browser";
-    homepage = "https://helium.computer";
-    license = licenses.gpl3Only;
-    platforms = platforms.linux;
-  };
-}
+    meta = with lib; {
+      description = "Helium web browser";
+      homepage = "https://helium.computer";
+      license = licenses.gpl3Only;
+      platforms = platforms.linux;
+    };
+  }
