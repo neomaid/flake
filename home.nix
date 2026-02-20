@@ -121,7 +121,7 @@
 
     settings = {
       user = {
-        name = "tearmaid";
+        name = "neomaid";
         email = "me@maid.dev";
       };
       init.defaultBranch = "main";
