@@ -7,11 +7,11 @@
   copyDesktopItems,
 }: let
   pname = "helium";
-  version = "0.9.1.1";
+  version = "0.9.3.1";
 
   src = fetchurl {
     url = "https://github.com/imputnet/helium-linux/releases/download/${version}/helium-${version}-x86_64.AppImage";
-    sha256 = "sha256-0Kw8Ko41Gdz4xLn62riYAny99Hd0s7/75h8bz4LUuCE=";
+    sha256 = "sha256-wUmFmfZPWSvPzArbegegQpY1CFu/XAguqPQpINDE2qY=";
   };
 
   desktopItem = makeDesktopItem {
