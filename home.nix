@@ -32,6 +32,7 @@
     stow
     cloc
     nurl
+    nix-output-monitor
     nix-init
     nvtopPackages.nvidia
 
